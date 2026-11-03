@@ -1,0 +1,6 @@
+Host,IP,Tipus_Amenaca,Nivell_Risc,Estat,Port_Infectat
+SRV-01,192.0.2.10,Ransomware,Critic,Infectat,445
+PC-01,192.0.2.20,Troia,Alt,Infectat,22
+PC-02,192.0.2.30,Malware,Mitja,Infectat,8080
+SRV-02,192.0.2.40,Backdoor,Critic,Infectat,3389
+PC-03,192.0.2.50,Cap,Baix,Net,0
