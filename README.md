@@ -43,3 +43,17 @@ A partir d'aquesta estructura, s'ha desenvolupat el fitxer `scripts/exorcism.sh`
 ### Resultat
 
 Primera versió de l'script de defensa preparada i contracte de dades establert amb l'Agent 1 per garantir la compatibilitat entre els dos components.
+
+### Fita 2 - Scrum Review
+
+S'ha resolt la Issue d'emergència mitjançant la branca `hotfix/protocol-update`, actualitzant el fitxer `data/ghost_hosts.csv` amb la nova columna `Port_Infectat` i adaptant el contracte de dades.
+
+També s'ha corregit la vulnerabilitat detectada a la branca `feature/nightmare-code`, que permetia ignorar els equips amb un nivell de risc crític.
+
+Un cop finalitzades les modificacions, s'ha creat una **Pull Request** des de la branca `hotfix/protocol-update` cap a `main`, sol·licitant la revisió de l'Agent 2.
+
+Després de l'aprovació i integració dels canvis per part de l'Agent 2, s'ha publicat la **tag `v0.2-beta`**, identificant la segona versió del projecte.
+
+### Resultat
+
+Issue d'emergència resolta, vulnerabilitat corregida i Pull Request creada i revisada correctament. La branca `hotfix/protocol-update` ha quedat integrada a `main` i s'ha publicat la versió `v0.2-beta`.
