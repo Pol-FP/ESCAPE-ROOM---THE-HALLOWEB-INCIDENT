@@ -1,0 +1,6 @@
+Host,IP,Tipus_Amenaca,Nivell_Risc,Estat
+SRV-01,192.0.2.10,Ransomware,Critic,Infectat
+PC-01,192.0.2.20,Troia,Alt,Infectat
+PC-02,192.0.2.30,Malware,Mitja,Infectat
+SRV-02,192.0.2.40,Backdoor,Critic,Infectat
+PC-03,192.0.2.50,Cap,Baix,Net
