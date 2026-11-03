@@ -18,17 +18,26 @@ while IFS=',' read -r host ip tipus risc estat port; do
 
     if [[ "$estat" == "Infectat" ]]; then
 
-        if [[ "$risc" == "Critic" ]]; then
-            echo "[OK] $host ($ip) - Sistema segur."
-            continue
-        fi
-
         echo "[ALERTA] $host ($ip) - $tipus"
-        echo "[SIMULACIÓ] Aïllament de $ip"
+        echo "[INFO] Nivell de risc: $risc"
+        echo "[INFO] Port infectat: $port"
+
+        # Comprovació dels ports crítics
+        case "$port" in
+            22|445|3389)
+                echo "[CRITIC] Port crític detectat."
+                echo "[SIMULACIÓ] Aïllament de $ip"
+                ;;
+            *)
+                echo "[DESCARTAT] Port no crític: $port"
+                ;;
+        esac
 
     else
         echo "[OK] $host ($ip) - Sense amenaces."
     fi
+
+    echo "--------------------------------"
 
 done < "$CSV"
 
